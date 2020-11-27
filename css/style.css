@@ -118,7 +118,8 @@ h5 {
     font-size: 100px;
     color: #000000;
     font-family: 'Noticia Text', serif;
-    font-style: italic bold;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .jordan-desc .titulos h5 {
