@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand h2 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.navbar-brand img {
+    width: 40px;
+    align-self: center;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-80%);
+    left: -8%;
+}
+
+.carousel-caption h1 {
+    font-size: 70px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Noticia Text', serif;
+}
+
+.carousel-caption p {
+    font-family: 'Varela Round', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.sub {
+    margin: 80px 0;
+    margin-bottom: 100px;
+}
+
+.sub .subcat h3 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub .subcat h3 span {
+    color: orangered;
+}
+
+.sub .subcat p {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub .subcat .categorias .cat-img img {
+    height: 180px;
+    width: 180px;
+    margin: 0;
+    padding: 10px;
+}
+
+.sub .subcat>.categorias .cat-img h4 a {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.sub .subcat>.categorias .cat-img h4 a:hover {
+    color: orangered;
+}
+
+.content-foto {
+    margin: 0 20px;
+}
+
+.content-foto .foto {
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.content-foto .foto img {
+    height: 500px;
+}
+
+.jordan-desc {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 0;
+    margin-right: 100px;
+}
+
+.jordan-desc .titulos h2,
+h3,
+h5 {
+    margin: 0;
+}
+
+.jordan-desc .titulos h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Noticia Text', serif;
+}
+
+.jordan-desc .titulos h2 {
+    font-size: 100px;
+    color: #000000;
+    font-family: 'Noticia Text', serif;
+    font-style: italic bold;
+}
+
+.jordan-desc .titulos h5 {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Noticia Text', serif;
+}
+
+.jordan-desc .boton>.btn {
+    color: black;
+}
+
+.jordan-desc .boton>.btn:hover {
+    border: none;
+    background: orangered;
+    color: white;
+}
+
+.main-container .main-articulos {
+    margin: 0 10px;
+}
+
+.main-container .imagen img {
+    height: 330px;
+    width: 260px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.main-container .imagen img:hover {
+    border: 2px solid #000000;
+}
+
+.main-articulos .descripcion h3 {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-articulos .descripcion h3>span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main-articulos .descripcion h3:hover {
+    color: orangered;
+}
+
+.main-articulos .descripcion p {
+    text-align: center;
+    color: gray;
+}
+
+.main-container .container h3>span {
+    color: orangered;
+}
+
+.pie {
+    padding: 100px;
+    background: #1a1919;
+}
+
+.pie .container .left-side h3 {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pie .container .left-side p {
+    color: #777676;
+}
+
+.pie .container .left-side ul {
+    display: flex;
+    list-style: none;
+}
+
+.pie .container .left-side ul li {
+    padding: 0 20px;
+}
+
+.pie .container .left-side ul li .fab {
+    color: #777676;
+}
+
+.pie .container .left-side ul li .fab:hover {
+    color: orangered;
+}
+
+.pie .container .right-side h4 {
+    color: #ffffff;
+    font-family: 'Noticia Text', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sub-column {
+    margin-top: 150px;
+}
+
+.sub-column h6 {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.footer-ul1 ul {
+    display: block;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.footer-ul1 ul li a {
+    color: #777676;
+}
+
+.sub-two-right p {
+    color: #777676;
+}
+
+.sub-two-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.sub-two-right ul li {
+    padding: 0 20px;
+}
+
+.sub-two-right ul li a {
+    color: #777676;
+}
+
+.text .text-center {
+    color: #777676;
+}
+
+.text .text-center span {
+    color: #9c1010;
+}
