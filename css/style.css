@@ -6,6 +6,30 @@
     box-sizing: border-box;
 }
 
+.register-nav,
+.user-nav {
+    background: black;
+}
+
+ul li .nav-register,
+ul li .nav-user {
+    color: black;
+    background: orangered;
+}
+
+ul li .nav-login,
+ul li .nav-carrito,
+ul li .nav-logout {
+    color: white;
+}
+
+ul li .nav-register:hover,
+ul li .nav-user:hover {
+    color: white;
+    background: orangered;
+    border-radius: 5px;
+}
+
 .navbar-brand h2 {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -20,6 +44,10 @@
 .nav-link {
     color: black;
     font-weight: 600;
+}
+
+.nav-link:hover {
+    color: orangered;
 }
 
 .carousel-caption {
@@ -70,6 +98,13 @@
     padding: 10px;
 }
 
+.sub .subcat .categorias .cat-img img {
+    height: 180px;
+    width: 180px;
+    margin: 0;
+    padding: 10px;
+}
+
 .sub .subcat>.categorias .cat-img h4 a {
     color: black;
     margin-left: 15px;
@@ -78,6 +113,14 @@
 
 .sub .subcat>.categorias .cat-img h4 a:hover {
     color: orangered;
+}
+
+.cat-img .dot:hover {
+    height: 25px;
+    width: 25px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .content-foto {
@@ -142,9 +185,19 @@ h5 {
     margin: 0 10px;
 }
 
+.main-articulos .contenedor {
+    height: 500px;
+    display: flex;
+}
+
+.main-articulos .contenido {
+    width: 300px;
+    height: 400px;
+}
+
 .main-container .imagen img {
-    height: 330px;
-    width: 260px;
+    height: 80%;
+    width: 100%;
     cursor: pointer;
     border-radius: 20px;
 }
@@ -246,7 +299,7 @@ h5 {
 }
 
 .sub-two-right ul li {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .sub-two-right ul li a {

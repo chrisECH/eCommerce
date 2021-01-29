@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/56dc3e6550.js" crossorigin="anonymous"></script>
@@ -18,35 +19,23 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white d-flex">
-        <a class="navbar-brand pl-5" href="index.php">
-            <img src="img/wearwolf-logo.svg" alt="Logo">
-            <h2>WearWolf</h2>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="navbarNav" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item pr-5">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item pr-5">
-                    <a class="nav-link" href="#">Acerca</a>
-                </li>
-                <li class="nav-item pr-5">
-                    <a class="nav-link" href="#">Comprar</a>
-                </li>
-                <li class="nav-item pr-5">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
-        </div>
 
-    </nav>
+    <?php
+
+        include_once 'indexSession.php';
+        if(isset($mensaje)){
+            include_once 'layout/navbar-mensaje.php';
+            include_once 'layout/regis-user.php';
+         }
+         
+         include_once 'layout/navbar.html';
+         
+    ?>
+
     <!-- FIN DEL NAVBAR -->
 
-    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="2500">
+
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
@@ -54,6 +43,7 @@
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
             <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
         </ul>
 
         <!-- The slideshow -->
@@ -93,7 +83,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <div class="container justify-content-start text-left">
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-6">
                                 <p>TEMPORADA DE DESCUENTOS.</p>
                                 <h1>Descubre las rebajas de hasta -50%</h1>
                             </div>
@@ -111,6 +101,17 @@
                                 <p>TODO LO QUE BUSCAS.</p>
                                 <h1>Compras al alcance de tu mano.</h1>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slide5.jpg" class="d-block w-100" alt="..." style="height: 700px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="container">
+                        <div class="row justify-content-end text-right">
+
                         </div>
                     </div>
                 </div>
@@ -139,27 +140,29 @@
                         <div class="row justify-content-around text-center">
 
                             <div class="col-lg-2 col-md-4 col-6 cat-img">
-                                <img src="img/Bags.jpg" class="rounded-circle" alt="">
+                                <img src="img/Bags.jpg" class="rounded-circle dot" alt="">
+
                                 <h4><a href="">Bolsos/Mochilas</a></h4>
+
                             </div>
                             <div class="col-lg-2 col-md-4 col-6 cat-img">
-                                <img src="img/watches.jpg" class="rounded-circle" alt="">
+                                <img src="img/watches.jpg" class="rounded-circle dot" alt="">
                                 <h4><a href="">Relojes</a></h4>
                             </div>
                             <div class="col-lg-2 col-md-4 col-6 cat-img">
-                                <img src="img/shoes.jpg" class="rounded-circle" alt="">
+                                <img src="img/shoes.jpg" class="rounded-circle dot" alt="">
                                 <h4><a href="">Calzado</a></h4>
                             </div>
                             <div class="col-lg-2 col-md-4 col-6 cat-img">
-                                <img src="img/clothes.jpg" class="rounded-circle" alt="">
+                                <img src="img/clothes.jpg" class="rounded-circle dot" alt="">
                                 <h4><a href="">Ropa</a></h4>
                             </div>
                             <div class="col-lg-2 col-md-4 col-6 cat-img">
-                                <img src="img/accessories.jpg" class="rounded-circle" alt="">
+                                <img src="img/accessories.jpg" class="rounded-circle dot" alt="">
                                 <h4><a href="">Accesorios</a></h4>
                             </div>
                             <div class="col-lg-2 col-md-4 col-6 cat-img">
-                                <img src="img/fragance.jpg" class="rounded-circle" alt="">
+                                <img src="img/fragance.jpg" class="rounded-circle dot" alt="">
                                 <h4><a href="">Fragancias</a></h4>
                             </div>
 
@@ -197,7 +200,7 @@
                 <p class="text-center">Productos seleccionados para ti.</p>
             </div>
             <div class="row main-articulos container-fluid">
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art1.jpg" alt="articulo1">
@@ -209,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art2.jpg" alt="articulo2">
@@ -221,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-6 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art3.jpg" alt="articulo3">
@@ -233,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art4.jpg" alt="articulo4">
@@ -245,7 +248,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art5.jpg" alt="articulo4">
@@ -257,7 +260,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art6.jpg" alt="articulo4">
@@ -269,7 +272,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art7.jpg" alt="articulo4">
@@ -281,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="contenido">
                         <div class="imagen">
                             <img class="img-fluid" src="img/art8.jpg" alt="articulo4">
@@ -391,10 +394,16 @@
         </div>
     </footer>
 
-
+    <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script>
+            window.onload = () => {
+            const myInput = document.getElementById('txtcopia');
+            myInput.onpaste = e => e.preventDefault();
+            }
+    </script>
 </body>
 
 </html>
